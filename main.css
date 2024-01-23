@@ -1,0 +1,50 @@
+div.left {
+    width: 50%;
+    float: left;
+}
+
+div.right {
+    width: 50%;
+    float: right;
+}
+
+div.statleft {
+    width: 43%;
+    float: left;
+}
+
+div.statright {
+    width: 57%;
+    float: right;
+}
+
+div.statbottom {
+    float: left;
+}
+
+.HitProbElement {
+    /* text-align: right; */
+    line-height: 30%;
+    /* color: blue; */
+}
+
+table {
+    border-collapse: collapse;
+    margin: 5px auto;
+}
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: center; /* 가운데 정렬을 위한 속성 */
+    vertical-align: middle; /* 수직 가운데 정렬을 위한 속성 */
+    padding: 2px;
+}
+
+fieldset {
+    width: 420px; /* 필요에 따라 크기를 조절할 수 있습니다. */
+    margin: auto; /* 화면 가운데 정렬을 위한 속성 */
+}
+
+#monsterStatsTable td {
+    width: 60px;
+}

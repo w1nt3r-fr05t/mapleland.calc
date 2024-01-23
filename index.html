@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>메이플랜드 N방컷 확률 계산기</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <form>
+            <label>직업 : </label>
+            <select id="classes" onchange="ClassIsSelectedThenUpdate()">
+                <option value="none">== 선택 ==</option>
+                <option value="warrior">전사</option>
+                <option value="magician">마법사</option>
+                <option value="bowman">궁수</option>
+                <option value="rogue">도적</option>
+            </select>
+              
+            <select id="jobs" onchange="JobIsSelectedThenUpdate()">
+                <option value="none">== 선택 ==</option>
+                <option value="one_handed_sword">한손검</option>
+                <option value="two_handed_sword">두손검</option>
+                <option value="spear">창</option>
+                <option value="polearm">폴암</option>
+                <option value="one_handed_axe">한손 도끼/둔기</option>
+                <option value="two_handed_axe">두손 도끼/둔기</option>
+                <option value="one_dimension">1차 전직</option>
+                <option value="fire">불독</option>
+                <option value="ice">썬콜</option>
+                <option value="cleric">클레릭</option>
+                <option value="bow">활</option>
+                <option value="crossbow">석궁</option>
+                <option value="assassin">표도</option>
+                <option value="thief">시프</option>
+            </select>
+
+            <fieldset id="stats">
+                <legend>스탯 입력</legend>
+            </fieldset>
+
+            <fieldset id="skills">
+                <legend>스킬 선택</legend>
+            </fieldset>
+
+            <fieldset>
+                <legend>몬스터 영역</legend>
+                <select id="monsterSelect" onchange="monsterSelectedThenUpdate()"></select>
+                <div id="monsterStatsTable"></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>대미지 표시 영역</legend>
+                <div class="left">
+                    <span>일반 대미지</span><br>
+                    <span id="maxDamage"></span><br>
+                    <span id="minDamage"></span>
+                </div>
+                <div class="right">
+                    <span id="finalDamage"></span><br>
+                    <span id="maxCritDamage"></span><br>
+                    <span id="minCritDamage"></span>
+                </div>
+            </fieldset>
+
+            <fieldset id="probs">
+                <legend>확률 표시 영역</legend>
+            </fieldset>
+        </form>
+        
+        <script src="monster.js" async defer></script>
+        <script src="skills.js" async defer></script>
+        <script src="main.js" async defer></script>
+    </body>
+</html>
