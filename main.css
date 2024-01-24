@@ -1,3 +1,18 @@
+.job_div {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    .job_div {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
 div.left {
     width: 50%;
     float: left;
@@ -45,9 +60,18 @@ fieldset {
     margin: auto;
 }
 
-@media only screen and (max-width: 500px) {
+body {
+    width: 520px;
+}
+
+@media only screen and (max-width: 520px) {
     fieldset {
+        width: 90%;
+    }
+
+    body {
         width: 100%;
+        margin: auto;
     }
 }
 
