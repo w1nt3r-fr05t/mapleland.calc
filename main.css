@@ -41,10 +41,22 @@ td, th {
 }
 
 fieldset {
-    width: 420px; /* 필요에 따라 크기를 조절할 수 있습니다. */
-    margin: auto; /* 화면 가운데 정렬을 위한 속성 */
+    width: 500px; /* 필요에 따라 크기를 조절할 수 있습니다. */
+    margin: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    fieldset {
+        width: 100%;
+    }
 }
 
 #monsterStatsTable td {
     width: 60px;
+}
+
+@media only screen {
+    body {
+        overflow-x: auto;
+    }
 }
