@@ -1,6 +1,7 @@
 .job_div {
     width: 500px;
     margin: 0 auto;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 20px;
 }
@@ -9,8 +10,13 @@
     .job_div {
         width: 100%;
         margin: 0 auto;
+        margin-top: 10px;
         margin-bottom: 10px;
     }
+}
+
+.hiddenDiv {
+    display: none;
 }
 
 div.left {
