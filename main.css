@@ -52,7 +52,7 @@ div.stat2 {
     display: flex;
     width: 21%;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
 }
 
 div.stat3 {
@@ -73,7 +73,7 @@ div.stat5 {
     display: flex;
     width: 32%;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
 }
 
 div.stat5 input {
@@ -151,14 +151,48 @@ body {
         width: 100%;
         margin: auto;
     }
+
+    div.stat1 {
+        display: flex;
+        width: 13%;
+        flex-direction: column;
+        gap: 2px;
+    }
+    
+    div.stat2 {
+        display: flex;
+        width: 19%;
+        flex-direction: column;
+        gap: 2.5px;
+    }
+    
+    div.stat3 {
+        display: flex;
+        width: 1%;
+        background-color: lightgray;
+        border-radius: 15% 15% / 15% 15%;
+    }
+    
+    div.stat4 {
+        display: flex;
+        width: 20%;
+        flex-direction: column;
+        gap: 2px;
+    }
+    
+    div.stat5 {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        gap: 2.5px;
+    }
+
+    .job_div select {
+        font-size: 4vw;
+        height: 6vw;
+    }
 }
 
 #monsterStatsTable td {
     width: 60px;
-}
-
-@media only screen {
-    body {
-        overflow-x: auto;
-    }
 }
