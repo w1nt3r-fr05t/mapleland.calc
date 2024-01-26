@@ -1,3 +1,6 @@
+@import url("https://font.elice.io/css?family=Elice+Digital+Baeum");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 .job_div {
     width: 500px;
     margin: 0 auto;
@@ -29,19 +32,62 @@ div.right {
     float: right;
 }
 
-div.statleft {
-    width: 43%;
-    float: left;
+#stats {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    contain: style layout inline-size;
 }
 
-div.statright {
-    width: 57%;
-    float: right;
+div.stat1 {
+    display: flex;
+    width: 15%;
+    flex-direction: column;
 }
 
-div.statbottom {
-    float: left;
+div.stat2 {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
 }
+
+div.stat3 {
+    display: flex;
+    width: 1%;
+    background-color: lightgray;
+    border-radius: 15% 15% / 15% 15%;
+}
+
+div.stat4 {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+
+div.stat5 {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+
+select {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+button {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+input {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* div.stat5 {
+    display: flex;
+} */
+
 
 .HitProbElement {
     /* text-align: right; */
@@ -69,11 +115,24 @@ fieldset {
 body {
     width: 520px;
     margin: auto;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 @media only screen and (max-width: 520px) {
     fieldset {
         width: 90%;
+        font-size: 3.6vw;
+    }
+
+    input {
+        width: 50%;
+        font-size: 2.5vw;
+        height:fit-content;
+        
+    }
+
+    select {
+        font-size: 2.5vw;
     }
 
     body {
