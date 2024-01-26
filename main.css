@@ -73,6 +73,7 @@ div.stat5 {
 }
 
 select {
+    font-size: 17px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -115,6 +116,7 @@ fieldset {
 body {
     width: 520px;
     margin: auto;
+    font-size: 18.5px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -127,12 +129,13 @@ body {
     input {
         width: 50%;
         font-size: 2.5vw;
-        height:fit-content;
+        height: 2.6vw;
         
     }
 
     select {
         font-size: 2.5vw;
+        height: 4.5vw;
     }
 
     body {
