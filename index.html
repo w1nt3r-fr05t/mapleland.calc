@@ -27,7 +27,7 @@
     <body>
         <form>
             <div class="job_div" style="text-align: left;">
-            <label>직업 : </label>
+            <label><b>직업</b> : </label>
             <select id="classes" onchange="ClassIsSelectedThenUpdate()">
                 <option value="none">== 선택 ==</option>
                 <option value="warrior">전사</option>
@@ -56,21 +56,21 @@
             </div>
 
             <fieldset id="stats">
-                <legend>스탯 입력</legend>
+                <legend><b>스탯</b></legend>
             </fieldset>
 
             <fieldset id="skills">
-                <legend>스킬 선택</legend>
+                <legend><b>스킬</b></legend>
             </fieldset>
 
             <fieldset>
-                <legend>몬스터 영역</legend>
+                <legend><b>몬스터</b></legend>
                 <select id="monsterSelect" onchange="monsterSelectedThenUpdate()"></select>
                 <div id="monsterStatsTable"></div>
             </fieldset>
 
             <fieldset>
-                <legend>대미지</legend>
+                <legend><b>대미지</b></legend>
                 <div class="left">
                     <span>기본</span><br>
                     <span id="maxDamage"></span><br>
@@ -84,7 +84,7 @@
             </fieldset>
 
             <fieldset id="probs">
-                <legend>확률</legend>
+                <legend><b>확률</b></legend>
                 <label style="font-size: smaller; color:darkgray">※ 10방컷까지 확인 가능, 확률 총합이 100%로 되게끔 함</label>
             </fieldset>
         </form>
