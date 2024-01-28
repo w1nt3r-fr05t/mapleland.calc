@@ -52,7 +52,7 @@ div.stat2 {
     display: flex;
     width: 21%;
     flex-direction: column;
-    gap: 3px;
+    gap: 3.2px;
 }
 
 div.stat3 {
@@ -129,6 +129,11 @@ body {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+#monsters {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media only screen and (max-width: 520px) {
     fieldset {
         width: 90%;
@@ -190,6 +195,11 @@ body {
     .job_div select {
         font-size: 4vw;
         height: 6vw;
+    }
+
+    #monsterSelect {
+        font-size: 3.5vw;
+        height: 5.5vw;
     }
 }
 

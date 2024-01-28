@@ -65,7 +65,10 @@
 
             <fieldset>
                 <legend><b>몬스터</b></legend>
-                <select id="monsterSelect" onchange="monsterSelectedThenUpdate()"></select>
+                <div id="monsters">
+                    <select id="monsterSelect" onchange="monsterSelectedThenUpdate()"></select>
+                    <span id="accRatio"></span>
+                </div>
                 <div id="monsterStatsTable"></div>
             </fieldset>
 
