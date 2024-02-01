@@ -134,6 +134,14 @@ body {
     justify-content: space-between;
 }
 
+#save-button {
+    margin-left: 0.5em;
+}
+
+#reset-button {
+    margin-left: 0.5em;
+}
+
 @media only screen and (max-width: 520px) {
     fieldset {
         width: 90%;
