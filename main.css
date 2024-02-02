@@ -18,6 +18,14 @@
     }
 }
 
+.header {
+    background-color: rgba(0, 0, 0, 0.8); /* 검정색, 투명도 60% */
+    color: white; /* 흰색 글자색 */
+    text-align: center;
+    padding: 20px; /* 내용과 테두리 사이의 간격 설정 (예시) */
+    margin: auto;
+}
+
 .hiddenDiv {
     display: none;
 }
@@ -123,7 +131,7 @@ fieldset {
 }
 
 body {
-    width: 520px;
+    width: 532px;
     margin: auto;
     font-size: 18.5px;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -142,7 +150,7 @@ body {
     margin-left: 0.5em;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 532px) {
     fieldset {
         width: 90%;
         font-size: 3.6vw;
