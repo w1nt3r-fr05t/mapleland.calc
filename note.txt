@@ -1,0 +1,46 @@
+전사
+파워 스트라이크, 슬래시 블러스트
+마스터리
+옵션 : 파이널 어택, 드래곤블러드(용기사), 땡땡 차지(팔라딘, 속성부여), 크루세이더
+
+불독
+익스플로전, 매직 컴포지션
+엠플리피케이션
+
+썬콜
+아이스 스트라이크, 매직 컴포지션, 썬더 스피어
+엠플리피케이션
+
+프리스트
+샤이닝 레이
+
+사수(저격수)
+아이스 샷, 에로우 이럽션, 스트레이프
+
+헌터(레인저)
+파이어 샷, 에로우 레인, 스트레이프
+
+허밋
+럭키세븐, 어벤져
+크리티컬 스로우, 쉐도우 파트너, 자벨린 마스터리
+
+시프
+어썰터
+
+
+span 높이 동기화
+
+<script>
+    // select의 높이를 가져와서 span의 높이로 설정하는 함수
+    function syncHeight() {
+        const selectElement = document.getElementById('mySelect');
+        const spanElement = document.getElementById('mySpan');
+        
+        // select의 높이를 span에 설정
+        spanElement.style.height = selectElement.offsetHeight + 'px';
+    }
+</script>
+
+쉐도우 파트너
+
+익스플로전
