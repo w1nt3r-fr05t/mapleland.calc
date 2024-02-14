@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'BMJUA';
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 80px;
+    padding-top: 2.5px;
+    line-height: 1.25;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #673f2f;
+}
+
+input {
+    width: 90%; 
+    text-align: center; 
+    vertical-align: auto;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#header2 {
+    display: none;
+}
+
+#select-job-display select{
+    height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 0.7em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    th, td {
+        width: 5.2em;
+        padding-top: 0.2em;
+    }
+
+    #header1 {
+        display: none;
+    }
+
+    #header2 {
+        display: block;
+    }
+}
+
+.button1 {
+    color: #ff510d;
+    text-align: center;
+    padding: 2px 0px 1px 0px;
+    border-width: 2px;
+    border-color: #ff510d;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #ff510d;
+    color: white;
+    text-align: center;
+    padding: 2px 0px 1px 0px;
+    border-width: 2px;
+    border-color: #ff510d;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botton1:hover {
+    box-shadow: 1px 1px 2px;
+}
+
+hr {
+    border-width: 1.5px;
+    border-color: #ff510d;
+}
+
+img {
+    filter: invert(41%) sepia(46%) saturate(5780%) hue-rotate(355deg) brightness(106%) contrast(101%);
+}
+
+#toggle-button {
+    position: absolute;
+    right: 3px;
+    font-size: xx-large;
+}
+
+#header2 {
+    position: relative;
+    width: 30px;
+    height: 35px;
+    z-index: 1;
+}
+
+#header2 ul {
+    position: absolute;
+    top: 40px;
+    right: -5px;
+    width: 80px;
+    background: #632c08;
+    color: #fff;
+    list-style-type: none;
+    padding: 0px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+#header2 li {
+    border-bottom: 1px dashed #d46b09;
+    padding: 5px 2px 3px;
+    transition: .1s;
+    text-align: center;
+}
+
+#header2 li:hover {
+    background: #bd6b00;
+}
+
+#header2 li:last-child {
+    border-bottom: 0 none;
+}

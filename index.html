@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYE446RLGZ"></script>
@@ -17,9 +17,9 @@
 
     <title>메이플랜드 N방컷 확률 계산기</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <meta name="naver-site-verification" content="3bda0ca81576db67c5884a82dd189071ffb6e2c9" />        
-    <link rel="icon" href="/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <meta name="naver-site-verification" content="3bda0ca81576db67c5884a82dd189071ffb6e2c9" />
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style/style.css">
     <meta name="keywords" content="메랜,계산기,N방컷,메이플스토리,메이플랜드,메이플">
     <meta name="description" content="스탯을 입력하고 스킬을 선택하면 몬스터가 몇방만에 죽을지 각각 확률을 계산해 줍니다.">
     <meta property="og:title" content="메랜 N방컷 확률 계산기">
@@ -74,7 +74,7 @@
                     <option value="두손도끼/둔기">두손도끼/둔기</option>
                 </select>
             </div>
-            
+
         </div>
         <div class="absolute w-screen h-screen flex bg-stone-950 opacity-95 z-10"></div>
     </div>
@@ -87,10 +87,10 @@
             <a href="./calc4.html" class="button1">4</a>
             <a href="./calc5.html" class="button1">5</a>
             <hr>
-            <button id="save-button" title="저장" onclick="saveToCookie()" class="w-8"><img src="./save.png"></button>
-            <button id="reset-button" title="리셋" onclick="resetAll()" class="w-8"><img src="./bin.png"></button>
+            <button id="save-button" title="저장" onclick="saveToCookieAndStorage()" class="w-8"><img src="images/save.png"></button>
+            <button id="reset-button" title="리셋" onclick="resetAll()" class="w-8"><img src="images/bin.png"></button>
             <hr>
-            <button id="src-btn" title="스크린샷" class="w-8"><img src="./screenshot.png"></button>
+            <button id="src-btn" title="스크린샷" class="w-8"><img src="images/screenshot.png"></button>
         </div>
 
         <div class="absolute right-3 top-2">
@@ -101,7 +101,7 @@
                     <li><a href="./calc3.html">세이브 슬롯 3</a></li>
                     <li><a href="./calc4.html">세이브 슬롯 4</a></li>
                     <li><a href="./calc5.html">세이브 슬롯 5</a></li>
-                    <li id="save-button" onclick="saveToCookie()">저장</li>
+                    <li id="save-button" onclick="saveToCookieAndStorage()">저장</li>
                     <li id="reset-button" onclick="resetAll()">리셋</li>
                 </ul>
             </div>
@@ -430,7 +430,7 @@
     </div>
 
     <div class="hidden">
-        <img src="googlesheet.png" alt="구글시트">
+        <img src="images/googlesheet.png" alt="구글시트">
     </div>
 
     <script src="monster.js"></script>
