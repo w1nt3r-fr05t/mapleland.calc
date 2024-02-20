@@ -126,10 +126,12 @@
                                 <td style="background-color: white;">
                                     <input id="user-lvl" type="number" onchange="statsChangedThenUpdate()">
                                 </td>
+                                <td id="level-up" style="background-color: #9c7c57; color: white; cursor: pointer;" onclick="levelUp()">▲</td>
                             </tr>
                             <tr>
                                 <td style="background-color: #cfb89e;">순수 스탯 합</td>
                                 <td id="total-pure-stat" style="background-color: #cfb89e;">22</td>
+                                <td id="level-down" style="background-color: #9c7c57; color: white; cursor: pointer;" onclick="levelDown()">▼</td>
                             </tr>
                         </table>
                     </div>
@@ -208,7 +210,7 @@
                 </div>
                 <div class="flex flex-col gap-3 self-end">
                     <!-- 공격력 -->
-                    <div class="flex">
+                    <div class="flex flex-col">
                         <table id="att-table">
                             <tr id="att-table-wa">
                                 <td style="background-color: #9c7c57; color: white;">무기 공격력</td>
@@ -251,6 +253,7 @@
                             </tr>
                         </table>
                         <table id="stat-table3" class="hidden">
+                            <span id="stat-table3-span" class="hidden" style="text-align: center; font-size: 70%;">INT와 마력은 필수 입력사항</span>
                             <tr>
                                 <td style="background-color: #9c7c57; color: white;">마력</td>
                                 <td style="background-color: white;">
@@ -287,7 +290,7 @@
                 </div>
             </div>
             <!-- 스킬 -->
-            <div class="relative flex flex-col p-3 gap-2 rounded-md shadow-md bg-[#fffbe6]">
+            <div id="skill-container" class="relative flex flex-col p-3 gap-2 rounded-md shadow-md bg-[#fffbe6]">
                 <!-- <div class="flex"> -->
                     <h1 class="absolute left-1 -top-3 bg-gradient-to-br from-red-800 via-rose-600 to-orange-400 bg-clip-text text-transparent">Skills</h1>
                     <!-- <button class="text-sm inline-flex bg-[#9c7c57] text-stone-100 self-end px-1.5 py-0.5 rounded-md">⟳</button> -->
@@ -295,7 +298,7 @@
                 <!-- 첫 번째 행 -->
                 <div>
                     <div class="flex justify-evenly gap-3">
-                        <div class="flex basis-2/5 p-2 gap-1 rounded-md shadow-inner bg-[#eed5a6]">
+                        <div class="relative flex basis-2/5 p-2 gap-1 rounded-md shadow-inner bg-[#eed5a6]">
                             <div class="flex basis-3/4 grow-0 flex-col">
                                 <select id="attack-skill" onchange="skillSelectedThenUpdate()" class="flex mb-1.5 rounded-md shadow-md text-center">
                                     <option value="1">달팽이 세마리</option>
@@ -310,8 +313,9 @@
                                 <span id="attack-skill-sub-2" class="flex justify-end text-stone-700">10</span>
                                 <span id="attack-skill-sub-4" class="flex justify-end text-stone-700"></span>
                             </div>
+                            <div class="absolute top-1 -right-5"><button class="pt-0.5 px-1 bg-[#9c7c57] text-white text-xs">M</button></div>
                         </div>
-                        <div id="assi-container1" class="hidden flex basis-2/5 p-2 gap-2 rounded-md shadow-inner bg-[#ffe3b4]">
+                        <div id="assi-container1" class="hidden relative flex basis-2/5 p-2 gap-2 rounded-md shadow-inner bg-[#ffe3b4]">
                             <div class="flex basis-3/4 flex-col">
                                 <p id="assistant-skill1" class="flex bg-white mb-1.5 rounded-md shadow-md pt-0.5 justify-center items-center"></p>
                                 <span id="assistant-skill1-sub-1" class="flex justify-center text-stone-700"></span>
@@ -322,13 +326,14 @@
                                 <span id="assistant-skill1-sub-2" class="flex justify-end text-stone-700"></span>
                                 <span id="assistant-skill1-sub-4" class="flex justify-end text-stone-700"></span>
                             </div>
+                            <div class="absolute top-1 -right-5"><button class="pt-0.5 px-1 bg-[#9c7c57] text-white text-xs">M</button></div>
                         </div>
                     </div>
                 </div>
                 <!-- 두 번째 행 -->
                 <div id="skill-container2" class="hidden">
                     <div class="flex justify-evenly gap-3">
-                        <div id="assi-container3" class="flex basis-2/5 p-2 gap-2 rounded-md shadow-inner bg-[#ffe3b4]">
+                        <div id="assi-container3" class="relative flex basis-2/5 p-2 gap-2 rounded-md shadow-inner bg-[#ffe3b4]">
                             <div class="flex basis-3/4 flex-col">
                                 <p id="assistant-skill3" class="flex bg-white mb-1.5 rounded-md shadow-md pt-0.5 justify-center items-center"></p>
                                 <span id="assistant-skill3-sub-1" class="flex justify-center text-stone-700"></span>
@@ -339,8 +344,9 @@
                                 <span id="assistant-skill3-sub-2" class="flex justify-end text-stone-700"></span>
                                 <span id="assistant-skill3-sub-4" class="flex justify-end text-stone-700"></span>
                             </div>
+                            <div class="absolute top-1 -right-5"><button class="pt-0.5 px-1 bg-[#9c7c57] text-white text-xs">M</button></div>
                         </div>
-                        <div id="assi-container2" class="flex basis-2/5 p-2 gap-2 rounded-md shadow-inner bg-[#ffe3b4]">
+                        <div id="assi-container2" class="relative flex basis-2/5 p-2 gap-2 rounded-md shadow-inner bg-[#ffe3b4]">
                             <div class="flex basis-3/4 flex-col">
                                 <p id="assistant-skill2" class="flex bg-white mb-1.5 rounded-md shadow-md pt-0.5 justify-center items-center"></p>
                                 <span id="assistant-skill2-sub-1" class="flex justify-center text-stone-700"></span>
@@ -351,6 +357,7 @@
                                 <span id="assistant-skill2-sub-2" class="flex justify-end text-stone-700"></span>
                                 <span id="assistant-skill2-sub-4" class="flex justify-end text-stone-700"></span>
                             </div>
+                            <div class="absolute top-1 -right-5"><button class="pt-0.5 px-1 bg-[#9c7c57] text-white text-xs">M</button></div>
                         </div>
                     </div>
                 </div>

@@ -23,6 +23,14 @@ th, td {
     border: 2px solid #673f2f;
 }
 
+#level-up {
+    width: 25px;
+}
+
+#level-down {
+    width: 25px;
+}
+
 input {
     width: 90%; 
     text-align: center; 
@@ -59,6 +67,14 @@ input[type="number"] {
         padding-top: 0.2em;
     }
 
+    #level-up {
+        width: 1.8em;
+    }
+
+    #level-down {
+        width: 1.8em;
+    }
+
     #header1 {
         display: none;
     }
@@ -88,7 +104,7 @@ input[type="number"] {
     border-color: #ff510d;
     border-radius: 5px;
     font-size: 16px;
-    cursor: pointer;
+    cursor: default;
 }
 
 .botton1:hover {
