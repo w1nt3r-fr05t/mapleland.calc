@@ -85,9 +85,10 @@ input[type="number"] {
 }
 
 .button1 {
+    width: 28px;
     color: #ff510d;
     text-align: center;
-    padding: 2px 0px 1px 0px;
+    padding-top: 1px;
     border-width: 2px;
     border-color: #ff510d;
     border-radius: 5px;
@@ -96,15 +97,30 @@ input[type="number"] {
 }
 
 .button2 {
+    width: 28px;
     background-color: #ff510d;
     color: white;
     text-align: center;
-    padding: 2px 0px 1px 0px;
+    padding-top: 1px;
     border-width: 2px;
     border-color: #ff510d;
     border-radius: 5px;
     font-size: 16px;
     cursor: default;
+}
+
+#save-button {
+    color: white;
+    padding-top: 2px;
+    background-color: #ff510d;
+    border-radius: 5px;
+}
+
+#reset-button {
+    color: white;
+    padding-top: 2px;
+    background-color: #ff510d;
+    border-radius: 5px;
 }
 
 .botton1:hover {
@@ -113,7 +129,7 @@ input[type="number"] {
 
 hr {
     border-width: 1.5px;
-    border-color: #ff510d;
+    border-color: #cfb89e;
 }
 
 #header1 img {
