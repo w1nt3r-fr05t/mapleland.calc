@@ -91,17 +91,22 @@
     <div id="job-name" class="pb-8 text-3xl text-center bg-gradient-to-br from-orange-400 via-rose-600 to-red-800 bg-clip-text text-transparent">모험가</div>
 
     <div class="relative max-w-max mx-auto bg-[#ffe3b4]">
-        <div id="header1" class="absolute -right-16 -top-36 flex flex-col gap-2">
-            <a href="./index.html" class="button1">1</a>
-            <a href="./calc2.html" class="button1">2</a>
-            <button class="button2">3</button>
-            <a href="./calc4.html" class="button1">4</a>
-            <a href="./calc5.html" class="button1">5</a>
+        <div id="header1" class="absolute -left-56 -top-36 w-48 p-2 flex flex-col gap-2">
+            <span>세이브 슬롯</span>
+            <div class="flex justify-evenly gap-2">
+                <a href="./index.html" class="button1">1</a>
+                <a href="./calc2.html" class="button1">2</a>
+                <button class="button2">3</button>
+                <a href="./calc4.html" class="button1">4</a>
+                <a href="./calc5.html" class="button1">5</a>
+            </div>
             <hr>
-            <button id="save-button" title="저장" onclick="saveToCookieAndStorage()" class="w-8"><img src="images/save.png"></button>
-            <button id="reset-button" title="리셋" onclick="resetAll()" class="w-8"><img src="images/bin.png"></button>
-            <hr>
-            <button id="src-btn" title="스크린샷" class="w-8"><img src="images/screenshot.png"></button>
+            <div class="flex justify-evenly gap-2">
+                <button id="save-button" title="저장" onclick="saveToCookieAndStorage()" class="w-16">저장</button>
+                <button id="reset-button" title="리셋" onclick="resetAll()" class="w-16">초기화</button>
+            </div>
+            <!-- <hr>
+            <button id="src-btn" title="스크린샷" class="w-8"><img src="images/screenshot.png"></button> -->
         </div>
 
         <div class="absolute right-3 -top-36">
@@ -379,9 +384,14 @@
                     <div class="absolute left-1 -top-3">
                         <h1 class="bg-gradient-to-br from-red-800 via-rose-600 to-orange-400 bg-clip-text text-transparent">Monsters</h1>
                     </div>
-                    <div class="flex justify-between items-center">
-                        <select id="monster-select" class="basis-3/5 rounded-md shadow-md" onchange="monsterSelectedThenUpdate()"></select>
-                        <span id="accuracy-ratio">명중률 : 0.00%</span>
+                    <div class="flex gap-2 justify-between">
+                        <div class="flex gap-2 items-center">
+                            <select id="monster-select" class="basis-3/5 rounded-md shadow-md" onchange="monsterSelectedThenUpdate()"></select>
+                            <button id="osm-library" title="올드스쿨메이플" onclick="hyperlink()"><img src="images/6d5b79dce333369a3b14c63bf6d52b90.png" class="w-8"></button>    
+                        </div>
+                        <div class="flex items-center">
+                            <span id="accuracy-ratio">명중률 : 0.00%</span>
+                        </div>
                     </div>
                     <!-- 몬스터 스탯 표 -->
                     <div class="flex justify-center">
@@ -469,6 +479,14 @@
                         <div class="text-center leading-3"> ---------------<br>03/19 업데이트<br>--------------- </div>
                         <div>표도 스킬 "어벤져" 크리티컬뎀으로만 방컷 확률 계산하던 오류 제보 받고 수정</div>
                         <div>확률 생략 (0.1% 미만 → 0.01% 미만으로 수정)</div>
+                    </div>
+                    <div class="flex flex-col w-48 p-2 gap-2 text-sm">
+                        <div class="text-center leading-3"> ---------------<br>03/31 업데이트<br>--------------- </div>
+                        <div>3차 전직 반영해서 데이터 수정</div>
+                    </div>
+                    <div class="flex flex-col w-48 p-2 gap-2 text-sm">
+                        <div class="text-center leading-3"> ---------------<br>04/28 업데이트<br>--------------- </div>
+                        <div>오시리아 대륙 몬스터 전부 추가</div>
                     </div>
                 </div>
                 <button type="button" id="left-button" class="absolute top-4 start-0 z-5 flex justify-center px-4 cursor-pointer">
