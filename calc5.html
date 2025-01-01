@@ -42,23 +42,23 @@
                 <option></option>
                 <optgroup label="전사">
                     <option value="검사">검사</option>
-                    <option value="나이트" >나이트</option>
-                    <option value="용기사" >용기사</option>
-                    <option value="크루세이더">크루세이더</option>
+                    <option value="나이트" >나이트-팔라딘</option>
+                    <option value="용기사" >용기사-다크나이트</option>
+                    <option value="크루세이더">크루세이더-히어로</option>
                 </optgroup>
                 <optgroup label="마법사">
                     <option value="매지션">매지션</option>
                     <option value="불독">불독</option>
                     <option value="썬콜">썬콜</option>
-                    <option value="클레릭">클레릭</option>
+                    <option value="클레릭">클레릭-프리-비숍</option>
                 </optgroup>
                 <optgroup label="궁수">
-                    <option value="헌터">헌터</option>
-                    <option value="사수">사수</option>
+                    <option value="헌터">헌터-레인저-보마</option>
+                    <option value="사수">사수-저격수-신궁</option>
                 </optgroup>
                 <optgroup label="도적">
-                    <option value="어쌔신">어쌔신</option>
-                    <option value="시프">시프</option>
+                    <option value="어쌔신">어쌔신-허밋-나로</option>
+                    <option value="시프">시프-섀도어</option>
                 </optgroup>
             </select>
             <div id="asd" class="hidden flex flex-col items-center">
@@ -374,6 +374,38 @@
                         </div>
                     </div>
                 </div>
+                <!-- 세 번째 행 -->
+                <div id="skill-container3" class="hidden">
+                    <div class="flex justify-evenly gap-3">
+                        <div id="assi-container4" class="hidden relative flex basis-2/5 p-2 gap-2 rounded-md shadow-inner bg-[#ffe3b4]">
+                            <div class="flex basis-3/4 flex-col">
+                                <p id="assistant-skill4" class="flex bg-white mb-1.5 rounded-md shadow-md pt-0.5 justify-center items-center"></p>
+                                <select id="assistant-skill4" onchange="updateAssistantSkillInfo2()" class="hidden flex bg-white mb-1.5 rounded-md shadow-md text-center"></select>
+                                <span id="assistant-skill4-sub-1" class="flex justify-center text-stone-700"></span>
+                                <span id="assistant-skill4-sub-3"  class="flex justify-center text-stone-700"></span>
+                            </div>
+                            <div class="flex basis-1/4 flex-col">
+                                <select id="assistant-skill4-lvl" onchange="assistantSkillLevelSelectedThenUpdate()" class="flex mb-1.5 rounded-md shadow-md text-center"></select>
+                                <span id="assistant-skill4-sub-2" class="flex justify-end text-stone-700"></span>
+                                <span id="assistant-skill4-sub-4" class="flex justify-end text-stone-700"></span>
+                            </div>
+                            <div class="absolute top-1 -right-5"><button class="pt-0.5 px-1 bg-[#9c7c57] text-white text-xs">M</button></div>
+                        </div>
+                        <div id="assi-container5" class="hidden relative flex basis-2/5 p-2 gap-2 rounded-md shadow-inner bg-[#ffe3b4]">
+                            <div class="flex basis-3/4 flex-col">
+                                <p id="assistant-skill5" class="flex bg-white mb-1.5 rounded-md shadow-md pt-0.5 justify-center items-center"></p>
+                                <span id="assistant-skill5-sub-1" class="flex justify-center text-stone-700"></span>
+                                <span id="assistant-skill5-sub-3"  class="flex justify-center text-stone-700"></span>
+                            </div>
+                            <div class="flex basis-1/4 flex-col">
+                                <select id="assistant-skill5-lvl" onchange="assistantSkillLevelSelectedThenUpdate()" class="flex mb-1.5 rounded-md shadow-md text-center"></select>
+                                <span id="assistant-skill5-sub-2" class="flex justify-end text-stone-700"></span>
+                                <span id="assistant-skill5-sub-4" class="flex justify-end text-stone-700"></span>
+                            </div>
+                            <div class="absolute top-1 -right-5"><button class="pt-0.5 px-1 bg-[#9c7c57] text-white text-xs">M</button></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- 몬스터 & 확률 -->
@@ -512,10 +544,10 @@
 
 
     <div class="flex flex-col pt-10 items-center gap-1 text-[#ff510d]">
-        <div class="flex gap-10">
+        <!-- <div class="flex gap-10">
             <a href="https://open.kakao.com/o/sLBjRbXf">오류제보 & 문의</a>
             <a href="https://toss.me/%EB%A9%94%EB%9E%9C%EA%B2%A8%EC%9A%B8%EC%84%9C%EB%A6%AC">후원</a>
-        </div>
+        </div> -->
         <span class="text-stone-700">Copyright 2024. 겨울서리. All rights reserved.</span>
     </div>
 
